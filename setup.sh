@@ -26,7 +26,7 @@ for s in json.load(open(sys.argv[1]))["skills"]:
   done
 done
 
-# Plugins: register each marketplace and enable the plugin; Claude Code installs the latest at launch.
+# Plugins: register each marketplace and enable the plugin; turn off disabledPlugins (e.g. synced account plugins).
 python3 - "$T/lock.json" <<'PY'
 import json, os, sys
 lock = json.load(open(sys.argv[1]))
@@ -35,6 +35,8 @@ s = json.load(open(p)) if os.path.exists(p) else {}
 for pl in lock.get("plugins", []):
     s.setdefault("extraKnownMarketplaces", {})[pl["name"]] = {"source": {"source": "github", "repo": pl["marketplace"]}}
     s.setdefault("enabledPlugins", {})[f'{pl["name"]}@{pl["name"]}'] = True
+for name in lock.get("disabledPlugins", []):
+    s.setdefault("enabledPlugins", {})[name] = False
 os.makedirs(os.path.dirname(p), exist_ok=True)
 json.dump(s, open(p, "w"), indent=2)
 PY
