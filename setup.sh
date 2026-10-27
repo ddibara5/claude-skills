@@ -39,4 +39,13 @@ os.makedirs(os.path.dirname(p), exist_ok=True)
 json.dump(s, open(p, "w"), indent=2)
 PY
 
+# Pre-install so plugin skills are listed from the first turn; launch-time install lands after the skill list is built.
+if command -v claude >/dev/null; then
+  python3 -c 'import json,sys; [print(p["marketplace"], p["name"]) for p in json.load(open(sys.argv[1])).get("plugins", [])]' "$T/lock.json" |
+  while read -r mp name; do
+    claude plugin marketplace add "$mp" >/dev/null 2>&1 || true
+    claude plugin install "$name@$name" >/dev/null 2>&1 || echo "Plugin $name not pre-installed; Claude Code installs it at launch."
+  done
+fi
+
 echo "Design skills ready: $(ls "$S" | tr '\n' ' ')"
