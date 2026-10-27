@@ -22,5 +22,6 @@
   ],
   "plugins": [
     { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "d34c87e1a00989ae8dbdd7f6b30b70f23319e860" }
-  ]
+  ],
+  "disabledPlugins": ["frontend-design@synced"]
 }
