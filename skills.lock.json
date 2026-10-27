@@ -1,0 +1,26 @@
+{
+  "updated": "2026-10-27",
+  "skills": [
+    {
+      "repo": "emilkowalski/skills",
+      "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+      "paths": [
+        "skills/emil-design-eng",
+        "skills/review-animations",
+        "skills/animate",
+        "skills/animation-performance",
+        "skills/apple-design",
+        "skills/mobile-native",
+        "skills/break-ui"
+      ]
+    },
+    {
+      "repo": "vercel-labs/agent-skills",
+      "commit": "6ec269328bc400712ee225a173a14b6b29128df7",
+      "paths": ["skills/web-design-guidelines"]
+    }
+  ],
+  "plugins": [
+    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "d34c87e1a00989ae8dbdd7f6b30b70f23319e860" }
+  ]
+}
