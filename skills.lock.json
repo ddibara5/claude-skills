@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-11-01",
   "skills": [
     {
       "repo": "emilkowalski/skills",
-      "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+      "commit": "a81dbca07f2217b7103e510c0f13f8d5b017afc9",
       "paths": [
         "skills/emil-design-eng",
         "skills/review-animations",
@@ -16,12 +16,12 @@
     },
     {
       "repo": "vercel-labs/agent-skills",
-      "commit": "6ec269328bc400712ee225a173a14b6b29128df7",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
       "paths": ["skills/web-design-guidelines"]
     }
   ],
   "plugins": [
-    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "d34c87e1a00989ae8dbdd7f6b30b70f23319e860" }
+    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285" }
   ],
   "disabledPlugins": ["frontend-design@synced"]
 }
