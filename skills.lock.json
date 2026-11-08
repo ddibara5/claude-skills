@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-08",
   "skills": [
     {
       "repo": "emilkowalski/skills",
-      "commit": "a81dbca07f2217b7103e510c0f13f8d5b017afc9",
+      "commit": "5206a950b715e0cabe7043ea0b2304332b91494e",
       "paths": [
         "skills/emil-design-eng",
         "skills/review-animations",
@@ -22,7 +22,7 @@
     }
   ],
   "plugins": [
-    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "e89e3ada3e875a89ac2c5d33d11e65ebef6fe285" }
+    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "924bbd194d02e5e15a227e75b5901fb0d7a4ecad" }
   ],
   "disabledPlugins": ["frontend-design@synced"]
 }
