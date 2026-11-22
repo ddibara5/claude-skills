@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-22",
   "skills": [
     {
       "repo": "emilkowalski/skills",
@@ -21,12 +21,12 @@
     },
     {
       "repo": "vercel-labs/agent-skills",
-      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
       "paths": ["skills/web-design-guidelines"]
     }
   ],
   "plugins": [
-    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "2b86d9c07b97d4bed7de23583e1bd1e58dd2baae" }
+    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "b49177d32788f2dc585c42831d845dacf1ebed2c" }
   ],
   "disabledPlugins": ["frontend-design@synced"]
 }
