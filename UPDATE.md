@@ -9,9 +9,11 @@ Policy (Dave, Oct 27, 2026): always auto-merge. Commit straight to `main`; no pu
    Write a 1 to 3 line plain-English summary per skill. Flag in capitals any NEW or CHANGED file that is not
    Markdown (scripts, hooks, binaries, package files), and any skill folder in `paths` that was removed upstream.
    If a listed path no longer exists at the new commit, leave that repo's `commit` unchanged and report it.
+   `setup.sh` refuses to install a skill that contains anything other than documentation and images, so a
+   flagged script or binary means that skill stops updating until Dave decides; say so in the notification.
 4. For each entry in `plugins`: `git ls-remote https://github.com/<marketplace> HEAD`; if it differs from `seen`,
    summarise the change the same way and update `seen` (plugins install their latest at session start anyway).
 5. If anything changed: update the SHAs and `updated` (YYYY-MM-DD), commit with the message
    `Update skills: <names>` and the summaries in the body, push to `main`.
 6. Send Dave one push notification: what updated, the flags from step 3, and the commit link. If nothing changed, send nothing.
-7. Never add, remove or rename skills on your own; only Dave changes the list.
+7. Never add, remove or rename skills on your own; only Dave changes the list. Never re-add a name in `removedSkills`.

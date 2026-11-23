@@ -10,14 +10,35 @@
         "skills/animate",
         "skills/animation-performance",
         "skills/apple-design",
-        "skills/mobile-native",
         "skills/break-ui",
         "skills/remove-animations",
         "skills/choreograph",
         "skills/gestures",
-        "skills/learn-taste"
+        "skills/learn-taste",
+        "skills/write-swift",
+        "skills/improve-animations",
+        "skills/find-animation-opportunities"
+      ]
+    },
+    {
+      "repo": "twostraws/SwiftUI-Agent-Skill",
+      "commit": "f2920b63995263f57b3e198674e89a602efba6d2",
+      "paths": [
+        "swiftui-pro"
+      ]
+    },
+    {
+      "repo": "Dimillian/Skills",
+      "commit": "05ba982bfeb0d77d3c97d4542b0ee15034d05f84",
+      "paths": [
+        "swiftui-performance-audit"
       ]
     }
+  ],
+  "removedSkills": [
+    "ask-emil",
+    "web-design-guidelines",
+    "mobile-native"
   ],
   "plugins": [
     {
@@ -27,6 +48,7 @@
     }
   ],
   "disabledPlugins": [
-    "frontend-design@synced"
+    "frontend-design@synced",
+    "frontend-design@claude-plugins-official"
   ]
 }
