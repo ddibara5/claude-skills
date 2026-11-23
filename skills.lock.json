@@ -15,18 +15,18 @@
         "skills/remove-animations",
         "skills/choreograph",
         "skills/gestures",
-        "skills/ask-emil",
         "skills/learn-taste"
       ]
-    },
-    {
-      "repo": "vercel-labs/agent-skills",
-      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "paths": ["skills/web-design-guidelines"]
     }
   ],
   "plugins": [
-    { "marketplace": "pbakaus/impeccable", "name": "impeccable", "seen": "b49177d32788f2dc585c42831d845dacf1ebed2c" }
+    {
+      "marketplace": "pbakaus/impeccable",
+      "name": "impeccable",
+      "seen": "b49177d32788f2dc585c42831d845dacf1ebed2c"
+    }
   ],
-  "disabledPlugins": ["frontend-design@synced"]
+  "disabledPlugins": [
+    "frontend-design@synced"
+  ]
 }
