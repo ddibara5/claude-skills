@@ -9,6 +9,8 @@ Design and Swift skills for Dave's Claude Code sessions: cloud sessions, and the
   skills that are not in the lock (such as `ios-reference-build`).
 - `test-setup.sh`: runs `setup.sh` against a throwaway HOME and checks the rules above. Run it after editing `setup.sh`.
 - `UPDATE.md`: what the weekly update job does (auto-merge policy).
+- `skills/`: skills written by the monthly review job, installed through lock entries that point at this repo
+  (`source: skills-review`, with an `added` date). Rules are in `UPDATE.md`.
 
 Where it runs:
 
